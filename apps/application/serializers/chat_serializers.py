@@ -374,7 +374,7 @@ class ChatSerializers(serializers.Serializer):
             chat_id = str(uuid.uuid1())
             model_id = self.data.get('model_id')
             dataset_id_list = self.data.get('dataset_id_list')
-            dialogue_number = 3 if self.data.get('multiple_rounds_dialogue', False) else 0
+            dialogue_number = self.initial_data.get('dialogue_number', 5) if self.data.get('multiple_rounds_dialogue', False) else 0
             application = Application(id=None, dialogue_number=dialogue_number, model_id=model_id,
                                       dataset_setting=self.data.get('dataset_setting'),
                                       model_setting=self.data.get('model_setting'),
