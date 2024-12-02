@@ -9,8 +9,8 @@
 import base64
 import threading
 
-from Crypto.Cipher import PKCS1_v1_5 as PKCS1_cipher
-from Crypto.PublicKey import RSA
+from Cryptodome.Cipher import PKCS1_v1_5 as PKCS1_cipher
+from Cryptodome.PublicKey import RSA
 from django.core import cache
 from django.db.models import QuerySet
 

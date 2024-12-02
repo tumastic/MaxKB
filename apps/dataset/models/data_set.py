@@ -77,7 +77,7 @@ class Status:
         self.task_status[task_type] = state
 
 
-class Type(models.TextChoices):
+class Type(models.IntegerChoices):
     base = 0, '通用类型'
 
     web = 1, 'web站点类型'

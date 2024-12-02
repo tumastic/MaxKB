@@ -13,7 +13,7 @@ from dataset.models.data_set import Document, Paragraph, DataSet
 from django.contrib.postgres.search import SearchVectorField
 
 
-class SourceType(models.TextChoices):
+class SourceType(models.IntegerChoices):
     """订单类型"""
     PROBLEM = 0, '问题'
     PARAGRAPH = 1, '段落'

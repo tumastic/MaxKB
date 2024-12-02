@@ -120,7 +120,7 @@ class Chat(AppModelMixin):
         db_table = "application_chat"
 
 
-class VoteChoices(models.TextChoices):
+class VoteChoices(models.IntegerChoices):
     """订单类型"""
     UN_VOTE = -1, '未投票'
     STAR = 0, '赞同'

@@ -4,12 +4,12 @@ const applicationRouter = {
   path: '/application',
   name: 'application',
   meta: { title: '应用', permission: 'APPLICATION:READ' },
-  redirect: '/application',
+  redirect: '/application1',
   component: () => import('@/layout/layout-template/AppLayout.vue'),
   children: [
     {
-      path: '/application',
-      name: 'application',
+      path: '/application1',
+      name: 'application1',
       component: () => import('@/views/application/index.vue')
     },
     {

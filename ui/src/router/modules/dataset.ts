@@ -4,11 +4,11 @@ const datasetRouter = {
   name: 'dataset',
   meta: { title: '知识库', permission: 'DATASET:READ' },
   component: () => import('@/layout/layout-template/AppLayout.vue'),
-  redirect: '/dataset',
+  redirect: '/dataset1',
   children: [
     {
-      path: '/dataset',
-      name: 'dataset',
+      path: '/dataset1',
+      name: 'dataset1',
       component: () => import('@/views/dataset/index.vue')
     },
     {

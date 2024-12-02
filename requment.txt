@@ -1,0 +1,40 @@
+pip install django
+sudo mkdir -p /opt/maxkb/app /opt/maxkb/model /opt/maxkb/conf
+sudo cp config_example.yml /opt/maxkb/conf/config.yml
+pip install djangorestframework
+pip install drf-yasg
+pip install django-filter
+pip install django-apscheduler
+pip install django-celery-beat
+pip install psycopg2-binary
+
+# 安装pgvector
+# 找到路径
+sudo find / -name "pg_config" -print
+# 安装pgvector
+sudo pg_config
+sudo make
+sudo make install
+sudo make PG_CONFIG=/Library/PostgreSQL/15/bin/pg_config
+sudo make PG_CONFIG=/Library/PostgreSQL/15/bin/pg_config install
+
+pip install pillow
+pip install pyyaml
+pip install langchain
+pip install Crypto
+pip install jieba
+pip uninstall pycrypto pycryptodome pycryptodomex
+pip install pycryptodomex
+
+pip install python-daemon
+pip install psutil
+pip install langchain_community
+pip install diskcache
+pip install langchain_openai
+pip install dashscope
+pip install google-generativeai langchain langchain-core langchain-google-genai google-ai-generativelanguage langchain_huggingface
+pip install tencentcloud-sdk-python
+pip install gunicorn
+
+账号密码：
+admin admin@123
