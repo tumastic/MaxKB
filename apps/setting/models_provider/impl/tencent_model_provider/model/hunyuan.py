@@ -137,9 +137,9 @@ class ChatHunyuan(BaseChatModel):
     class Config:
         """Configuration for this pydantic object."""
 
-        allow_population_by_field_name = True
+        populate_by_name = True
 
-    @root_validator(pre=True)
+    @root_validator(pre=True, allow_reuse=True)
     def build_extra(cls, values: Dict[str, Any]) -> Dict[str, Any]:
         """Build extra kwargs from additional params that were passed in."""
         all_required_field_names = get_pydantic_field_names(cls)

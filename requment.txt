@@ -38,3 +38,9 @@ pip install gunicorn
 
 账号密码：
 admin admin@123
+
+python -m venv venv
+source venv/bin/activate
+
+which python  # 应该显示虚拟环境中的 Python 路径
+pip list 

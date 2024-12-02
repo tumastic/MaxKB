@@ -13,6 +13,7 @@ from common.exception.app_exception import AppApiException
 from common.forms import BaseForm
 from setting.models_provider.base_model_provider import BaseModelCredential, ValidCode
 from setting.models_provider.impl.local_model_provider.model.embedding import LocalEmbedding
+from pydantic import BaseModel
 
 
 class OllamaEmbeddingModelCredential(BaseForm, BaseModelCredential):

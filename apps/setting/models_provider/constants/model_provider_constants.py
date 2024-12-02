@@ -27,6 +27,7 @@ from setting.models_provider.impl.xf_model_provider.xf_model_provider import Xun
 from setting.models_provider.impl.xinference_model_provider.xinference_model_provider import XinferenceModelProvider
 from setting.models_provider.impl.zhipu_model_provider.zhipu_model_provider import ZhiPuModelProvider
 from setting.models_provider.impl.local_model_provider.local_model_provider import LocalModelProvider
+from setting.models_provider.impl.custom_model_provider.custom_model_provider import CustomModelProvider
 
 
 class ModelProvideConstants(Enum):
@@ -47,3 +48,5 @@ class ModelProvideConstants(Enum):
     model_xinference_provider = XinferenceModelProvider()
     model_vllm_provider = VllmModelProvider()
     aliyun_bai_lian_model_provider = AliyunBaiLianModelProvider()
+    model_custom_provider = CustomModelProvider()
+
